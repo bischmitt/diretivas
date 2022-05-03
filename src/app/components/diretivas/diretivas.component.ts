@@ -1,14 +1,13 @@
-import { PeopleService } from './shared/services/people.service';
 import { Component, OnInit } from '@angular/core';
-
+import { PeopleService } from 'src/app/shared/services/people.service';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-diretivas',
+  templateUrl: './diretivas.component.html',
+  styleUrls: ['./diretivas.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class DiretivasComponent implements OnInit {
   count = 0;
-  nome = 'Ivonaldo Junior Escobar Soares';
+  nome = 'Bianca Klein Schmitt';
   text = '';
 
   pessoas = [
@@ -42,5 +41,4 @@ export class AppComponent implements OnInit {
       this.pessoas = people;
     })
   }
-
 }
