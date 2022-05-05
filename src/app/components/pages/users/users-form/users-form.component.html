@@ -1,0 +1,70 @@
+<section class=" m-auto col-10 d-block justify-content-center">
+  <h2 class="py-3 text-center">Formulário</h2>
+  <form [formGroup]="userForm">
+    <div class="d-flex flex-wrap justify-content-center">
+
+      <div class="row my-4">
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="nome" id="nome" placeholder="Digite o seu nome">
+            <label for="nome">Nome</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome">
+            <label for="sobrenome">Sobrenome</label>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="idade" id="idade" placeholder="Digite a sua Idade">
+            <label for="idade">Idade</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="profissao" id="profissao" placeholder="Digite o seu profissao">
+            <label for="profissao">Profissão</label>
+          </div>
+        </div>
+      </div>
+        <!-- <div class="col-6">
+          <mat-form-field appearance="outline" class="py-2">
+            <mat-label>Nome</mat-label>
+            <input matInput type="text" formControlName="nome" id="nome" placeholder="Digite o seu nome">
+          </mat-form-field>
+        </div>
+
+        <div class="col-6">
+          <mat-form-field appearance="outline" class="py-2">
+            <mat-label>Sobrenome</mat-label>
+            <input matInput type="text" formControlName="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome">
+          </mat-form-field>
+        </div>
+
+        <div class="col-6">
+          <mat-form-field appearance="outline" class="py-2">
+            <mat-label>Idade</mat-label>
+            <input matInput type="text" formControlName="idade" id="idade" placeholder="Digite a sua Idade">
+          </mat-form-field>
+        </div>
+
+        <div class="col-6">
+          <mat-form-field appearance="outline" class="py-2">
+            <mat-label>Profissão</mat-label>
+            <input matInput type="text" formControlName="profissao" id="profissao" placeholder="Digite o seu profissao">
+          </mat-form-field>
+        </div>-->
+      </div>
+
+
+    <div class="d-flex justify-content-center py-3">
+      <button mat-raised-button routerLink="" class="btn-cancelar m-2">Cancelar</button>
+      <button mat-raised-button color="accent" class="btn-salvar m-2" (click)="actionButton()">Cadastrar</button>
+    </div>
+
+  </form>
+</section>

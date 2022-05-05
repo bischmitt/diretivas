@@ -1,0 +1,32 @@
+@import 'src/styles';
+@import '~@angular/material/theming';
+
+.mat-card{
+  background-color: $bg;
+}
+
+table, mat-paginator{
+  width: 100%;
+  text-align: center;
+  background-color: $bg;
+}
+
+
+
+tr{
+  background-color: $bg;
+  vertical-align: middle;
+}
+
+thead > tr, tr:hover{
+  background-color: mat-color($color-primary, 100);
+}
+
+.div-table{
+  width: 100%;
+}
+
+.mat-header-cell{
+  text-align: center;
+  font-size: 1.2rem;
+}

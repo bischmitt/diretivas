@@ -1,0 +1,7 @@
+@import 'src/styles.scss';
+@import '~@angular/material/theming';
+
+.form-control:focus {
+  border-color: mat-color($color-accent, 700);
+  box-shadow: 0 0 0 0.2rem #02645457;
+}
