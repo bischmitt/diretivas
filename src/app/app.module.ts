@@ -19,6 +19,8 @@ import { UsersFormComponent } from './components/pages/users/users-form/users-fo
 import { DataBindingComponent } from './components/pages/data-binding/data-binding.component';
 import { ToDoItemComponent} from './components/pages/to-do/to-do-item/to-do-item.component';
 import { ToDoListComponent } from './components/pages/to-do/to-do-list/to-do-list.component';
+import { ButtonComponent } from './components/button/button.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ToDoListComponent } from './components/pages/to-do/to-do-list/to-do-lis
     UsersFormComponent,
     DataBindingComponent,
     ToDoItemComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    ButtonComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
@@ -44,9 +48,6 @@ import { ToDoListComponent } from './components/pages/to-do/to-do-list/to-do-lis
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-
-
-
   ],
   providers: [PeopleService],
   bootstrap: [AppComponent]
